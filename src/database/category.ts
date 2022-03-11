@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const {Schema} = mongoose;
 
 
-const BrandSchema = new  Schema({
+const CategorySchema = new  Schema({
     uuid:{
         type:String,
         required:true,
@@ -24,4 +24,4 @@ const BrandSchema = new  Schema({
 }
 )
 
-export default mongoose.model("Brand", BrandSchema)
+export default mongoose.model("Category", CategorySchema)
