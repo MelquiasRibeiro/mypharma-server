@@ -3,6 +3,7 @@ import UserController from "./controllers/userController";
 import SessionController from "./controllers/sessionController";
 import BrandController from "./controllers/brandController";
 import CategoryController from "./controllers/categoryController";
+import ProducController from "./controllers/producController";
 
 import auth from './middlewares/auth';
 
@@ -28,6 +29,11 @@ routes.get("/caregory", CategoryController.index);
 routes.put("/caregory/:id", CategoryController.update);
 routes.delete("/caregory/:id", CategoryController.delete);
 
+
+routes.post("/product", ProducController.store);
+routes.get("/product", ProducController.index);
+routes.put("/product/:id", ProducController.update);
+routes.delete("/product/:id", ProducController.delete);
 
 
 
